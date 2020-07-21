@@ -32,7 +32,7 @@ Text_Games = [[
 ء━━━━━━━━━━━━━
 الميزيد م̷ـــِْن المعلومات √
 راسل المطور البوت °
-📌| Ch [@THE_M3RK]
+📌| Ch [@ASTORHBOTS]
 ]]
 send(msg.chat_id_, msg.id_,Text_Games) 
 end
