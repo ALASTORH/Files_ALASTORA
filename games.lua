@@ -589,10 +589,10 @@ end
 return false
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
-database:del(bot_id..'Speed:Tr'..msg.chat_id_)
-KlamSpeed = {'سيف الدين','عبدالملك بن مروان','1914','الملك خفرع','سورة طه','الروم','التبت','روسيا','الانف والاذن','8كواكب','الارز','شرغوف','الفهد','الثديات','النمر','باسكال','193‪9'};
-name = KlamSpeed[math.random(#KlamSpeed)]
-database:set(bot_id..'Klam:Speed'..msg.chat_id_,name)
+database:del(bot_id..'Bos:Tr'..msg.chat_id_)
+KlamBos = {'سيف الدين','عبدالملك بن مروان','1914','الملك خفرع','سورة طه','الروم','التبت','روسيا','الانف والاذن','8كواكب','الارز','شرغوف','الفهد','الثديات','النمر','باسكال','193‪9'};
+name = KlamBos[math.random(#KlamBos)]
+database:set(bot_id..'Klam:Bos'..msg.chat_id_,name)
 name = string.gsub(name,'سيف الدين','من هو القائد الإسلامي الذي انتصر على التتار والمغول وهزم هولاكو?')
 name = string.gsub(name,'عبدالملك بن مروان','من هو أول من قام بصكّ النقود عند العرب?')
 name = string.gsub(name,'1914','متى وقعت الحرب العالمية الأولى?')
@@ -615,12 +615,12 @@ return false
 end
 end
 ------------------------------------------------------------------------
-if text == ''..(database:get(bot_id..'Klam:Speed'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Speed:Tr'..msg.chat_id_) then
-if not database:get(bot_id..'Speed:Tr'..msg.chat_id_) then 
+if text == ''..(database:get(bot_id..'Klam:Bos'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Bos:Tr'..msg.chat_id_) then
+if not database:get(bot_id..'Bos:Tr'..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_,'😍| كفو وربي الف مبروك لقد فزت وربحت نقطة🥇 \n♻¦ للعب مره اخره ارسل »{ الاسئله , اسئله }')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
-database:set(bot_id..'Speed:Tr'..msg.chat_id_,true)
+database:set(bot_id..'Bos:Tr'..msg.chat_id_,true)
 end 
 if text == 'تعطيل الالعاب' and Manager(msg) then   
 if database:get(bot_id..'Lock:Games'..msg.chat_id_)  then
