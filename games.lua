@@ -696,9 +696,9 @@ return false
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
 aldwl = {'روسيا','تركيا','اليابان','كندا','البرازيل','استراليا','الصومال','عمان','ليبيا','الجزائر','السودان','الكويت','سوريا','تونس','لبنان','الامارات','فلسطين','الاردن','البحرين','قطر','مصر','السعودية','العراق','اليمن',};
-name = alasra[math.random(#alasra)]
-database:del(bot_id..'Set:alasra:Bot'..msg.chat_id_)
-database:set(bot_id..':Set:alasra'..msg.chat_id_,name)
+name = aldwl[math.random(#aldwl)]
+database:del(bot_id..'Set:aldwl:Bot'..msg.chat_id_)
+database:set(bot_id..':Set:aldwl'..msg.chat_id_,name)
 name = string.gsub(name,'روسيا','🇷🇺')
 name = string.gsub(name,'تركيا','🇹🇷')
 name = string.gsub(name,'اليابان','🇯🇵')
