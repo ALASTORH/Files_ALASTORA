@@ -635,10 +635,10 @@ end
 return false
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
-database:del(bot_id..'Set:Maan'..msg.chat_id_)
-Maan = {'قرد','دجاجه','بطريق','ضفدع','بومه','نحله','ديك','جمل','بقره','دولفين','تمساح','قرش','نمر','اخطبوط','سمكه','خفاش','اسد','فأر','ذئب','فراشه','عقرب','زرافه','قنفذ','تفاحه','باذنجان'};
-name = Maan[math.random(#Maan)]
-database:set(bot_id..'Maan'..msg.chat_id_,name)
+database:del(bot_id..'Aan:Tr'..msg.chat_id_)
+KlammAan = {'قرد','دجاجه','بطريق','ضفدع','بومه','نحله','ديك','جمل','بقره','دولفين','تمساح','قرش','نمر','اخطبوط','سمكه','خفاش','اسد','فأر','ذئب','فراشه','عقرب','زرافه','قنفذ','تفاحه','باذنجان'};
+name = KlamAan[math.random(#KlamAan)]
+database:set(bot_id..'Klam:Aan'..msg.chat_id_,name)
 name = string.gsub(name,'الاسطوره','الاسطوره')
 name = string.gsub(name,'دجاجه','دجاجه')
 name = string.gsub(name,'بطريق','بطريق')
@@ -668,12 +668,12 @@ return false
 end
 end
 ------------------------------------------------------------------------
-if text == ''..(database:get(bot_id..'Maan'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Set:Maany'..msg.chat_id_) then
-if not database:get(bot_id..'Set:Maan'..msg.chat_id_) then 
+if text == ''..(database:get(bot_id..'Klam:Aan'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Set:Maany'..msg.chat_id_) then
+if not database:get(bot_id..'Aan:Tr'..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_,' 😍| كفوو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻| للعب مره اخره ارسل »{ `الاسرع او اسرع` } )
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
-database:set(bot_id..'Set:Maan'..msg.chat_id_,true)
+database:set(bot_id..'Aan:Tr'..msg.chat_id_,true)
 end 
 if text == 'تعطيل الالعاب' and Manager(msg) then   
 if database:get(bot_id..'Lock:Games'..msg.chat_id_)  then
