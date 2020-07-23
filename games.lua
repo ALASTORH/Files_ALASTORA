@@ -684,7 +684,7 @@ database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)
 end
 database:set(bot_id..'Set:alasra:Bot'..msg.chat_id_,true)
 end
-if text == 'الدول' or text == 'علم' then
+if text == 'علم' or text == 'الدول' then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -695,10 +695,10 @@ end
 return false
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
-aldwl = {'روسيا','تركيا','اليابان','كندا','البرازيل','استراليا','الصومال','عمان','ليبيا','الجزائر','السودان','الكويت','سوريا','تونس','لبنان','الامارات','فلسطين','الاردن','البحرين','قطر','مصر','السعودية','العراق','اليمن',};
-name = aldwl[math.random(#aldwl)]
-database:del(bot_id..'Set:aldwl:Bot'..msg.chat_id_)
-database:set(bot_id..':Set:aldwl'..msg.chat_id_,name)
+database:del(bot_id..'Dwl:Tr'..msg.chat_id_)
+KlamDwl = {'روسيا','تركيا','اليابان','كندا','البرازيل','استراليا','الصومال','عمان','ليبيا','الجزائر','السودان','الكويت','سوريا','تونس','لبنان','الامارات','فلسطين','الاردن','البحرين','قطر','مصر','السعودية','العراق','اليمن',};
+name = KlamDwl[math.random(#KlamDwl)]
+database:set(bot_id..'Klam:Dwl'..msg.chat_id_,name)
 name = string.gsub(name,'روسيا','🇷🇺')
 name = string.gsub(name,'تركيا','🇹🇷')
 name = string.gsub(name,'اليابان','🇯🇵')
@@ -728,14 +728,13 @@ return false
 end
 end
 ------------------------------------------------------------------------
-if text == ''..(database:get(bot_id..':Set:aldwl'..msg.chat_id_) or '')..'' then 
-if not database:get(bot_id..'Set:aldwl:Bot'..msg.chat_id_) then 
-database:del(bot_id..':Set:aldwl'..msg.chat_id_)
-send(msg.chat_id_, msg.id_,'😍| كفوو عليك الف مبروك لقد فزت وربحت 3 نقاط 🥉\n♻| للعب مره اخره ارسل »{ علم , الدول }')
-database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 3)  
+if text == ''..(database:get(bot_id..'Klam:Dwl'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Dwl:Tr'..msg.chat_id_) then
+if not database:get(bot_id..'Dwl:Tr'..msg.chat_id_) then 
+send(msg.chat_id_, msg.id_,'😍| كفو وربي الف مبروك لقد فزت وربحت 5 نقاط \n♻¦ للعب مره اخرى ارسل »{ علم , الدول }')
+database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
-database:set(bot_id..'Set:aldwl:Bot'..msg.chat_id_,true)
-end
+database:set(bot_id..'Dwl:Tr'..msg.chat_id_,true)
+end 
 if text == 'تعطيل الالعاب' and Manager(msg) then   
 if database:get(bot_id..'Lock:Games'..msg.chat_id_)  then
 database:del(bot_id..'Lock:Games'..msg.chat_id_) 
