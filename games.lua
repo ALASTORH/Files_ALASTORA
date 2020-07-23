@@ -668,7 +668,7 @@ return false
 end
 end
 ------------------------------------------------------------------------
-if text == ''..(database:get(bot_id..'Klam:Aan'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Set:Maany'..msg.chat_id_) then
+if text == ''..(database:get(bot_id..'Klam:Aan'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Aan:Tr'..msg.chat_id_) then
 if not database:get(bot_id..'Aan:Tr'..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_,' 😍| كفوو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻| للعب مره اخره ارسل »{ `الاسرع او اسرع` } )
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
