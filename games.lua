@@ -525,7 +525,7 @@ end
 if text == ''..(database:get(bot_id..':Set:English'..msg.chat_id_) or '')..'' then 
 if not database:get(bot_id..'Set:English:Bot'..msg.chat_id_) then 
 database:del(bot_id..':Set:English'..msg.chat_id_)
-send(msg.chat_id_, msg.id_,'😍| كفوو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻| للعب مره اخرى ارسل »{ `انكليزي` }')
+send(msg.chat_id_, msg.id_,'😍| كفوو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻| للعب مره اخرى ارسل »{ `انجليزي` }')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:English:Bot'..msg.chat_id_,true)
