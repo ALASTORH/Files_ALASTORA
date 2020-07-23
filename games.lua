@@ -731,7 +731,7 @@ end
 if text == ''..(database:get(bot_id..'Klam:Dwl'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Dwl:Tr'..msg.chat_id_) then
 if not database:get(bot_id..'Dwl:Tr'..msg.chat_id_) then 
 send(msg.chat_id_, msg.id_,'😍| كفو وربي الف مبروك لقد فزت وربحت 5 نقاط \n♻¦ للعب مره اخرى ارسل »{ علم , الدول }')
-database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
+database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 5)  
 end
 database:set(bot_id..'Dwl:Tr'..msg.chat_id_,true)
 end 
