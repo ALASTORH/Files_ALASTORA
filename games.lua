@@ -59,7 +59,7 @@ end
 end
 if text == ''..(database:get(bot_id..'Random:Sm'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Set:Sma'..msg.chat_id_) then
 if not database:get(bot_id..'Set:Sma'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'😍| ذكي وربي الف مبروك لقد فزت وربحت نقطة🥇 \n♻¦ للعب مره اخره ارسل »{ سمايل , سمايلات }')
+send(msg.chat_id_, msg.id_,'😍| ذكي وربي الف مبروك لقد فزت وربحت نقطة🥇 \n♻¦ للعب مره اخرى ارسل »{ سمايل , سمايلات }')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:Sma'..msg.chat_id_,true)
@@ -132,7 +132,7 @@ end
 ------------------------------------------------------------------------
 if text == ''..(database:get(bot_id..'Klam:Speed'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Speed:Tr'..msg.chat_id_) then
 if not database:get(bot_id..'Speed:Tr'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'😍| كفو وربي الف مبروك لقد فزت وربحت نقطة🥇 \n♻¦ للعب مره اخره ارسل »{ الترتيب , ترتيب }')
+send(msg.chat_id_, msg.id_,'😍| كفو وربي الف مبروك لقد فزت وربحت نقطة🥇 \n♻¦ للعب مره اخرى ارسل »{ الترتيب , ترتيب }')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Speed:Tr'..msg.chat_id_,true)
@@ -193,7 +193,7 @@ end
 ------------------------------------------------------------------------
 if text == ''..(database:get(bot_id..'Klam:Hzor'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Set:Hzora'..msg.chat_id_) then
 if not database:get(bot_id..'Set:Hzora'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'😍| كفوو وربي الف مبروك لقد فزت وربحت نقطة🥇 \n♻¦ للعب مره اخره ارسل »{ حزوره }')
+send(msg.chat_id_, msg.id_,'😍| كفوو وربي الف مبروك لقد فزت وربحت نقطة🥇 \n♻¦ للعب مره اخرى ارسل »{ حزوره }')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:Hzora'..msg.chat_id_,true)
@@ -246,7 +246,7 @@ end
 ------------------------------------------------------------------------
 if text == ''..(database:get(bot_id..'Maany'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Set:Maany'..msg.chat_id_) then
 if not database:get(bot_id..'Set:Maany'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'😍| الف مبروك لقد فزت وربحت نقطة🥇\n♻¦ للعب مره اخره ارسل »{ معاني }')
+send(msg.chat_id_, msg.id_,'😍| الف مبروك لقد فزت وربحت نقطة🥇\n♻¦ للعب مره اخرى ارسل »{ معاني }')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:Maany'..msg.chat_id_,true)
@@ -298,7 +298,7 @@ end
 ------------------------------------------------------------------------
 if text == ''..(database:get(bot_id..'Set:Aks:Game'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Set:Aks'..msg.chat_id_) then
 if not database:get(bot_id..'Set:Aks'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'😍|كفو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻¦ للعب مره اخره ارسل »{ العكس }')
+send(msg.chat_id_, msg.id_,'😍|كفو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻¦ للعب مره اخرى ارسل »{ العكس }')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:Aks'..msg.chat_id_,true)
@@ -441,7 +441,7 @@ end
 if text == ''..(database:get(bot_id..':Set:Moktlf'..msg.chat_id_) or '')..'' then 
 if not database:get(bot_id..'Set:Moktlf:Bot'..msg.chat_id_) then 
 database:del(bot_id..':Set:Moktlf'..msg.chat_id_)
-send(msg.chat_id_, msg.id_,'😍|  كفوو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻¦ للعب مره اخره ارسل »{ المختلف }')
+send(msg.chat_id_, msg.id_,'😍|  كفوو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻¦ للعب مره اخرى ارسل »{ المختلف }')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:Moktlf:Bot'..msg.chat_id_,true)
@@ -483,7 +483,7 @@ end
 if text == ''..(database:get(bot_id..':Set:Ryadeat'..msg.chat_id_) or '')..'' then 
 if not database:get(bot_id..'Set:Ryadeat:Bot'..msg.chat_id_) then 
 database:del(bot_id..':Set:Ryadeat'..msg.chat_id_)
-send(msg.chat_id_, msg.id_,'😍| كفوو عليك الف مبروك لقد فزت وربحت نقطة🥇\n♻| للعب مره اخره ارسل »{ رياضيات }')
+send(msg.chat_id_, msg.id_,'😍| كفوو عليك الف مبروك لقد فزت وربحت نقطة🥇\n♻| للعب مره اخرى ارسل »{ رياضيات }')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:Ryadeat:Bot'..msg.chat_id_,true)
@@ -524,7 +524,7 @@ end
 if text == ''..(database:get(bot_id..':Set:English'..msg.chat_id_) or '')..'' then 
 if not database:get(bot_id..'Set:English:Bot'..msg.chat_id_) then 
 database:del(bot_id..':Set:English'..msg.chat_id_)
-send(msg.chat_id_, msg.id_,'😍| كفوو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻| للعب مره اخره ارسل »{ `انكليزي` }')
+send(msg.chat_id_, msg.id_,'😍| كفوو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻| للعب مره اخرى ارسل »{ `انكليزي` }')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:English:Bot'..msg.chat_id_,true)
@@ -572,7 +572,7 @@ end
 if text == ''..(database:get(bot_id..'Set:Amth'..msg.chat_id_) or '')..'' then 
 if not database:get(bot_id..'Set:Amth:Bot'..msg.chat_id_) then 
 database:del(bot_id..'Set:Amth'..msg.chat_id_)
-send(msg.chat_id_, msg.id_,'😍|  كفوو عليك الف مبروك لقد فزت وربحت نقطة🥇\n♻¦ للعب مره اخره ارسل »{ امثله }')
+send(msg.chat_id_, msg.id_,'😍|  كفوو عليك الف مبروك لقد فزت وربحت نقطة🥇\n♻¦ للعب مره اخرى ارسل »{ امثله }')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:Amth:Bot'..msg.chat_id_,true)
@@ -617,7 +617,7 @@ end
 ------------------------------------------------------------------------
 if text == ''..(database:get(bot_id..'Klam:Bos'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Bos:Tr'..msg.chat_id_) then
 if not database:get(bot_id..'Bos:Tr'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'😍| كفو وربي الف مبروك لقد فزت وربحت نقطة🥇 \n♻¦ للعب مره اخره ارسل »{ الاسئله , اسئله }')
+send(msg.chat_id_, msg.id_,'😍| كفو وربي الف مبروك لقد فزت وربحت نقطة🥇 \n♻¦ للعب مره اخرى ارسل »{ الاسئله , اسئله }')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Bos:Tr'..msg.chat_id_,true)
@@ -633,7 +633,7 @@ end
 return false
 end
 if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
-alasra = {'قرد','دجاجه','بطريق','ضفدع','بومه','نحله','ديك','جمل','بقره','دولفين','تمساح','قرش','نمر','اخطبوط','سمكه','خفاش','اسد','فأر','ذئب','فراشه','عقرب','زرافه','قنفذ','تفاحه','باذنجان',};
+alasra = {'قرد','دجاجه','بطريق','ضفدع','بومه','نحله','ديك','جمل','بقره','دولفين','تمساح','قرش','نمر','اخطبوط','سمكه','خفاش','اسد','فأر','ذئب','فراشه','عقرب','زرافه','قنفذ','العراق','سلام عليكم ورحمة الله وبركاتة','بوووووووت😂','يرسل😛','انا اهبل','انا ثور','انا هطف','تفاحه','باذنجان',};
 name = alasra[math.random(#alasra)]
 database:del(bot_id..'Set:alasra:Bot'..msg.chat_id_)
 database:set(bot_id..':Set:alasra'..msg.chat_id_,name)
@@ -642,6 +642,13 @@ name = string.gsub(name,'دجاجه','دجاجه')
 name = string.gsub(name,'بطريق','بطريق')
 name = string.gsub(name,'ضفدع','ضفدع')
 name = string.gsub(name,'خنفشار','خنفشار')
+name = string.gsub(name,'العراق','العراق')
+name = string.gsub(name,'سلام عليكم ورحمة الله وبركاتة','سلام عليكم ورحمة الله وبركاتة')
+name = string.gsub(name,'بوووووووت😂','بوووووووت😂')
+name = string.gsub(name,'يرسل😛','يرسل😛')
+name = string.gsub(name,'انا اهبل','انا اهبل')
+name = string.gsub(name,'انا هطف','انا هطف')
+name = string.gsub(name,'انا ثور','انا ثور')
 name = string.gsub(name,'قرنبيط','قرنبيط')
 name = string.gsub(name,'القسطنطينيه','القسطنطينيه')
 name = string.gsub(name,'سوريا','سوريا')
@@ -669,7 +676,7 @@ end
  if text == ''..(database:get(bot_id..':Set:alasra'..msg.chat_id_) or '')..'' then 
 if not database:get(bot_id..'Set:alasra:Bot'..msg.chat_id_) then 
 database:del(bot_id..':Set:alasra'..msg.chat_id_)
-send(msg.chat_id_, msg.id_,'😍| كفوو عليك الف مبروك لقد فزت وربحت نقطة🥇\n♻| للعب مره اخره ارسل »{ الاسرع }')
+send(msg.chat_id_, msg.id_,'😍| كفوو عليك الف مبروك لقد فزت وربحت نقطة🥇\n♻| للعب مره اخرى ارسل »{ الاسرع }')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:alasra:Bot'..msg.chat_id_,true)
