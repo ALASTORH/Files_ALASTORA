@@ -622,6 +622,58 @@ database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)
 end
 database:set(bot_id..'Bos:Tr'..msg.chat_id_,true)
 end 
+if text == 'الاسرع' or text == 'اسرع' then
+if AddChannel(msg.sender_user_id_) == false then
+local textchuser = database:get(bot_id..'text:ch:user')
+if textchuser then
+send(msg.chat_id_, msg.id_,'['..textchuser..']')
+else
+send(msg.chat_id_, msg.id_,'🗳️| لا تستطيع استخدام البوت يرجى الاشتراك في القناة حتى تتمكن من استخدام الاوامر \n 📌| اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
+end
+return false
+end
+if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
+alasra = {'قرد','دجاجه','بطريق','ضفدع','بومه','نحله','ديك','جمل','بقره','دولفين','تمساح','قرش','نمر','اخطبوط','سمكه','خفاش','اسد','فأر','ذئب','فراشه','عقرب','زرافه','قنفذ','تفاحه','باذنجان',};
+name = alasra[math.random(#alasra)]
+database:del(bot_id..'Set:alasra:Bot'..msg.chat_id_)
+database:set(bot_id..':Set:alasra'..msg.chat_id_,name)
+name = string.gsub(name,'الاسطوره','الاسطوره')
+name = string.gsub(name,'دجاجه','دجاجه')
+name = string.gsub(name,'بطريق','بطريق')
+name = string.gsub(name,'ضفدع','ضفدع')
+name = string.gsub(name,'خنفشار','خنفشار')
+name = string.gsub(name,'قرنبيط','قرنبيط')
+name = string.gsub(name,'القسطنطينيه','القسطنطينيه')
+name = string.gsub(name,'سوريا','سوريا')
+name = string.gsub(name,'اليمن','اليمن')
+name = string.gsub(name,'تمساح','تمساح')
+name = string.gsub(name,'السعوديه','السعوديه')
+name = string.gsub(name,'نمر','نمر')
+name = string.gsub(name,'اخطبوط','اخطبوط')
+name = string.gsub(name,'سمكه','سمكه')
+name = string.gsub(name,'خفاش','خفاش')
+name = string.gsub(name,'الامارات','الامارات')
+name = string.gsub(name,'مصر','مصر')
+name = string.gsub(name,'سورس الاسطوره','سورس الاسطوره')
+name = string.gsub(name,'البحرين','البحرين')
+name = string.gsub(name,'مع نفسك','مع نفسك')
+name = string.gsub(name,'زرافه','زرافه')
+name = string.gsub(name,'قنفذ','قنفذ')
+name = string.gsub(name,'سورس','سورس')
+name = string.gsub(name,'باذنجان','باذنجان')
+send(msg.chat_id_, msg.id_,'🎗️| اسرع واحد يرسل الكلمة » {'..name..'}')
+return false
+end
+end
+------------------------------------------------------------------------
+ if text == ''..(database:get(bot_id..':Set:alasra'..msg.chat_id_) or '')..'' then 
+if not database:get(bot_id..'Set:alasra:Bot'..msg.chat_id_) then 
+database:del(bot_id..':Set:alasra'..msg.chat_id_)
+send(msg.chat_id_, msg.id_,'😍| كفوو عليك الف مبروك لقد فزت وربحت نقطة🥇\n♻| للعب مره اخره ارسل »{ الاسرع }')
+database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
+end
+database:set(bot_id..'Set:alasra:Bot'..msg.chat_id_,true)
+end
 if text == 'تعطيل الالعاب' and Manager(msg) then   
 if database:get(bot_id..'Lock:Games'..msg.chat_id_)  then
 database:del(bot_id..'Lock:Games'..msg.chat_id_) 
