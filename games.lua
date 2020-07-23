@@ -575,8 +575,8 @@ end
 if text == ''..(database:get(bot_id..'Set:Amth'..msg.chat_id_) or '')..'' then 
 if not database:get(bot_id..'Set:Amth:Bot'..msg.chat_id_) then 
 database:del(bot_id..'Set:Amth'..msg.chat_id_)
-send(msg.chat_id_, msg.id_,'😍|  كفوو عليك الف مبروك لقد فزت وربحت نقطة🥇\n♻¦ للعب مره اخرى ارسل »{ امثله }')
-database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
+send(msg.chat_id_, msg.id_,'😍|  كفوو عليك الف مبروك لقد فزت وربحت 3 نقاط🥉\n♻¦ للعب مره اخرى ارسل »{ امثله }')
+database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 3)  
 end
 database:set(bot_id..'Set:Amth:Bot'..msg.chat_id_,true)
 end
@@ -716,7 +716,7 @@ name = string.gsub(name,'تونس','🇹🇳')
 name = string.gsub(name,'لبنان','🇱🇧')
 name = string.gsub(name,'الامارات','🇦🇪')
 name = string.gsub(name,'فلسطين','🇵🇸')
-name = string.gsub(name,' الاردن','🇯🇴')
+name = string.gsub(name,'الاردن','🇯🇴')
 name = string.gsub(name,'البحرين','🇧🇭')
 name = string.gsub(name,'قطر','🇶🇦')
 name = string.gsub(name,'مصر','🇪🇬')
