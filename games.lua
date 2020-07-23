@@ -702,7 +702,7 @@ database:set(bot_id..':Set:aldwl'..msg.chat_id_,name)
 name = string.gsub(name,'روسيا','🇷🇺')
 name = string.gsub(name,'تركيا','🇹🇷')
 name = string.gsub(name,'اليابان','🇯🇵')
-name = string.gsub(name,'كندا','. 🇨🇦')
+name = string.gsub(name,'كندا','🇨🇦')
 name = string.gsub(name,'البرازيل','🇧🇷')
 name = string.gsub(name,'استراليا','🇦🇺')
 name = string.gsub(name,'الصومال','🇸🇴')
@@ -732,7 +732,7 @@ if text == ''..(database:get(bot_id..':Set:aldwl'..msg.chat_id_) or '')..'' then
 if not database:get(bot_id..'Set:aldwl:Bot'..msg.chat_id_) then 
 database:del(bot_id..':Set:aldwl'..msg.chat_id_)
 send(msg.chat_id_, msg.id_,'😍| كفوو عليك الف مبروك لقد فزت وربحت 3 نقاط 🥉\n♻| للعب مره اخره ارسل »{ علم , الدول }')
-database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 5)  
+database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 3)  
 end
 database:set(bot_id..'Set:aldwl:Bot'..msg.chat_id_,true)
 end
