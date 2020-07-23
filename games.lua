@@ -22,7 +22,6 @@ Text_Games = [[
 🔘 | لـعـبـة التـخـمين
 🔘 | لـعـبـة الـتـرتيب 
 🔘 | لـعـبـة السمايلات
-🔘 | لـعـبـة الاســـرع 
 🔘 | لـعـبـة المختلف 
 🔘 | لـعـبـة الرياضيات
 🔘 | لـعـبـة الانجليزي
@@ -33,7 +32,7 @@ Text_Games = [[
 🔘 | لـعـبـة الـمـعـانـي
 ء━━━━━━━━━━━━━
 المزيد م̷ـــِْن المعلومات √
-راسل مـطـور الـبـوت◐
+راسل المطور البوت °
 📌| Ch [@AST0RH]
 ]]
 send(msg.chat_id_, msg.id_,Text_Games) 
@@ -622,58 +621,6 @@ send(msg.chat_id_, msg.id_,'😍| كفو وربي الف مبروك لقد فز�
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Bos:Tr'..msg.chat_id_,true)
-end 
------------------------------------------------------------------------
-if text == 'الاسرع' or text == 'الاسرع' then
-if AddChannel(msg.sender_user_id_) == false then
-local textchuser = database:get(bot_id..'text:ch:user')
-if textchuser then
-send(msg.chat_id_, msg.id_,'['..textchuser..']')
-else
-send(msg.chat_id_, msg.id_,'🗳️| لا تستطيع استخدام البوت يرجى الاشتراك في القناة حتى تتمكن من استخدام الاوامر \n 📌| اشترك هنا ['..database:get(bot_id..'add:ch:username')..']')
-end
-return false
-end
-if database:get(bot_id..'Lock:Games'..msg.chat_id_) then
-database:del(bot_id..'Aan:Tr'..msg.chat_id_)
-KlamAan = {'قرد','دجاجه','بطريق','ضفدع','بومه','نحله','ديك','جمل','بقره','دولفين','تمساح','قرش','نمر','اخطبوط','سمكه','خفاش','اسد','فأر','ذئب','فراشه','عقرب','زرافه','قنفذ','تفاحه','باذنجان',};
-name = KlamAan[math.random(#KlamAan)]
-database:set(bot_id..'Klam:Aan'..msg.chat_id_,name)
-name = string.gsub(name,'الاسطوره','الاسطوره')
-name = string.gsub(name,'دجاجه','دجاجه')
-name = string.gsub(name,'بطريق','بطريق')
-name = string.gsub(name,'ضفدع','ضفدع')
-name = string.gsub(name,'خنفشار','خنفشار')
-name = string.gsub(name,'قرنبيط','قرنبيط')
-name = string.gsub(name,'القسطنطينيه','القسطنطينيه')
-name = string.gsub(name,'سوريا','سوريا')
-name = string.gsub(name,'اليمن','اليمن')
-name = string.gsub(name,'تمساح','تمساح')
-name = string.gsub(name,'السعوديه','السعوديه')
-name = string.gsub(name,'نمر','نمر')
-name = string.gsub(name,'اخطبوط','اخطبوط')
-name = string.gsub(name,'سمكه','سمكه')
-name = string.gsub(name,'خفاش','خفاش')
-name = string.gsub(name,'الامارات','الامارات')
-name = string.gsub(name,'مصر','مصر')
-name = string.gsub(name,'سورس الاسطوره','سورس الاسطوره')
-name = string.gsub(name,'البحرين','البحرين')
-name = string.gsub(name,'مع نفسك','مع نفسك')
-name = string.gsub(name,'زرافه','زرافه')
-name = string.gsub(name,'قنفذ','قنفذ')
-name = string.gsub(name,'سورس','سورس')
-name = string.gsub(name,'باذنجان','باذنجان')
-send(msg.chat_id_, msg.id_,'🎗️| اسرع واحد يدز معنى السمايل » {'..name..'}')
-return false
-end
-end
-------------------------------------------------------------------------
-if text == ''..(database:get(bot_id..'Klam:Aan'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Aan:Tr'..msg.chat_id_) then
-if not database:get(bot_id..'Aan:Tr'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,' 😍| كفوو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻| للعب مره اخرى ارسل »{ الاسرع , اسرع } )
-database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
-end
-database:set(bot_id..'Aan:Tr'..msg.chat_id_,true)
 end 
 if text == 'تعطيل الالعاب' and Manager(msg) then   
 if database:get(bot_id..'Lock:Games'..msg.chat_id_)  then
