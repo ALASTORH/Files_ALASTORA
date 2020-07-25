@@ -31,11 +31,6 @@ TextReply = '• شَُـبٌِٰيَٰـكٍٰ صُِـﮧﮧاَٰفِٰنٍٰ
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'هاي' then
-TextReply = '• هَٰہۧـاَٰيَٰـﮧﮧاَٰتّٰ يَٰـرِٰوٍّحٌٰـہيَٰ 🙋🏼‍♂💙ֆ'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
 if text == 'هيو' then
 TextReply = '• هيو بخشمك 💫ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
@@ -61,6 +56,7 @@ TextReply = '• عــــفٌوِاًً .. ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
+
 if text == 'دي' then
 TextReply = '• خّٰلْٰيَٰنٍٰـﮧيَٰ اَٰحٌٰبٌِٰـﮧكٍٰ 😾ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
@@ -273,6 +269,96 @@ return false
 end
 if text == 'احبج' then
 TextReply = '•جًِّـﮧذَْاَٰبٌِٰ يَٰـرِٰيَٰدِٰ يَٰطَُِـہكٍٰجًِّ😹🌞⚡️ֆ'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'فديتك' then
+TextReply = 'يـّسَـْلْمـّﯙو گلگ ذۈق'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'اعشقك' then
+TextReply = 'امٌـــوَوَوَوَتْ فَـيَـكِـ 😘'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'ارحب' or text == 'ارحبو' then
+TextReply = 'البقئ'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'تامر' or text == 'امر' then
+TextReply = 'مايامر عليك ظالم'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'موجود' or text == 'احد موجود' then
+TextReply = 'تفضل عزيزي 🌝🌸'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == '😂😂' or text == '😂😂😂' then
+TextReply = 'شـهضحڪًــة  ๋͜͡اٰ͡لحلوة دٌِخيَلُ بربڪً'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'انا' or text == ' انت' then
+TextReply = 'انت│ واحــد😒 نشبه??مــــا تقًعـــد وتسكت😂😘'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'بتحبني' then
+TextReply = 'احبك اد الكون 😍'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'فديتك' then
+TextReply = 'فداك/ج كلبي ودكاته 🙈💗'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'حبي' then
+TextReply = 'بعد روحي 😍❤️ تفضل'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'اسكت' then
+TextReply = 'وك معلم 🌚💞' then
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'شغال' then
+TextReply = 'نعم عزيزي باقي واتمدد 😎🌿' 
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'طفش' or text == 'طفشان' then
+TextReply = 'ليش ضايج حياتي'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'صدق' then
+TextReply = 'ممكن اكِذب عليك!؟ 🌚'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'مرحبا' or text == 'مراحب' then
+TextReply = 'مراحب 😍❤️ نورت-ي 🌹'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'مزه' then
+TextReply = 'زاحف😂 من هذي دزيلي صورتها'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text =='منورين' or text == 'منور' then
+TextReply = 'من نورك عمري ❤️🌺'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'هلا' or text == 'هاي' or text == 'الو' then
+TextReply = 'هلوات اذا عندك قروبات ضيفني🤷🏼‍♀️❤️'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
