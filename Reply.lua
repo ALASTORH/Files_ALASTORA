@@ -151,7 +151,7 @@ TextReply = '• مٍٰنٍٰـﮧوٍّ໑رِٰ حٌٰبٌِٰـعٍِّمٍٰ
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'صباحو' then
+if text == 'صباحو' or text == 'صباحك' then
 TextReply = '• صُِبٌِٰاَٰحٌٰـہكٍٰ عٍِّسٌٍـہلْٰ يَٰعٍِّسٌٍـﮧلْٰ😼🤞ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
@@ -161,7 +161,7 @@ TextReply = '• صُِبٌِٰاَٰحٌٰـہكٍٰ عٍِّسٌٍـہلْٰ �
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'كفو' then
+if text == 'كفو' or text== 'كفووو' then
 TextReply = '• اَٰهَٰہۧ كٍٰفِٰـﮧوٍّ໑ يَٰبٌِٰہوٍّ୭ اَٰلْٰضـلْٰہوٍّ୭عٍِّ😹ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
@@ -191,7 +191,7 @@ TextReply = '• شَُشَُـﮧﮧوٍّ໑فِٰ 🌝🌝ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'مساء الخير' then
+if text == 'مساء الخير' or text== 'مسا الخير' then
 TextReply = '• مٍٰسٌٍـﮧاَٰء اَٰلْٰحٌٰـﮧبٌِٰ يَٰحٌٰہبٌِٰحٌٰہبٌِٰ🌛🔥ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
