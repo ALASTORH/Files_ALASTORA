@@ -107,7 +107,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'تحبني' then
-TextReply = '• مٍٰـﮧاَٰدِٰرِٰيَٰ اَٰفِٰكٍٰـﮧرِٰ🙁😹ֆ'
+TextReply = '• مٍٰـﮧاَٰدِٰرِٰيَٰ اَٰفِٰكٍٰـﮧرِٰ🙁😹ֆ' or TextReply = 'لُا مٌـاحُـبّـكِ😒' or TextReply = 'الُدِنَيَا بّدِوَنَكِ مٌاتْسِوَى♥' or TextReply = 'اعشقكـ عـشـق😍'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -126,7 +126,7 @@ TextReply = '• شَُبٌِٰيَٰـﮧكٍٰ كٍٰاَٰلْٰـﮧبٌِٰ
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == '😳' then
+if text == '😳' or text == '😳😳' or text == '😳😳😳' then
 TextReply = 'ُها حُبّيَ شِنَوَ الُسِالُفَُه'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
