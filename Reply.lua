@@ -82,7 +82,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'واقف' then
-TextReply = '• بٌِٰنٍٰلْٰخّٰـﮧرِٰاَٰ وٍّيَٰـﮧنٍٰ وٍّاَٰكٍٰـﮧفِٰ😐😒ֆ'
+TextReply = '•لُاوَالُلُُه شِغًالُ مٌحُدِ يَقًدِرَ يَوَقًفَنَيَ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
