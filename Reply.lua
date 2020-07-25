@@ -302,8 +302,8 @@ TextReply = 'شـهضحڪًــة  ๋͜͡اٰ͡لحلوة دٌِخيَلُ ب�
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'انا' or text == ' انت' then
-TextReply = 'انت│ واحــد😒 نشبه??مــــا تقًعـــد وتسكت😂😘'
+if text == 'انا' or text == 'انت' then 
+TextReply = '😒 نشبه??مــــا تقًعـــد وتسكت😂😘'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
