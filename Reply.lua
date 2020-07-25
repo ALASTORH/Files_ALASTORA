@@ -352,7 +352,7 @@ TextReply = 'زاحف😂 من هذي دزيلي صورتها'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text =='منورين' or text == 'منور' then
+if text == 'منورين' or text == 'منور' then
 TextReply = 'من نورك عمري ❤️🌺'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
