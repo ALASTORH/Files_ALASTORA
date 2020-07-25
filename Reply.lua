@@ -277,24 +277,7 @@ TextReply = 'يـّسَـْلْمـّﯙو گلگ ذۈق'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'اعشقك' then
-TextReply = 'امٌـــوَوَوَوَتْ فَـيَـكِـ 😘'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
 end
-if text == 'ارحب' or text == 'ارحبو' then
-TextReply = 'البقئ'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'تامر' or text == 'امر' then
-TextReply = 'مايامر عليك ظالم'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-
-
-
 if text == 'تفعيل ردود البوت' and Manager(msg) then
 database:del(bot_id..'Reply:Status'..msg.chat_id_)
 send(msg.chat_id_, msg.id_,'☑| تم تفعيل ردود البوت')
