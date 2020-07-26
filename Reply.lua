@@ -81,18 +81,8 @@ TextReply = '•دِٰيَٰلْٰـﮧهَٰہۧ شَُـﮧوٍّ୭نٍٰ ا�
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'احبك' then
-TextReply = '•حٌٰبٌِٰيَٰبٌِٰـﮧيَٰ وٍّنٍٰـﮧيَٰ هَٰہۧــمٍٰ😻👅ֆ'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
 if text == 'باي' then
 TextReply = '• وٍّيَٰـﮧنٍٰ رِٰاَٰيَٰـہحٌٰ خّٰلْٰيَٰنٍٰـﮧهَٰہۧ مٍٰتّٰوٍّنٍٰسٌٍيَٰـﮧنٍٰ🙁💔ֆ'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'واقف' then
-TextReply = '• بٌِٰنٍٰلْٰخّٰـﮧرِٰاَٰ وٍّيَٰـﮧنٍٰ وٍّاَٰكٍٰـﮧفِٰ😐😒ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -103,11 +93,6 @@ return false
 end
 if text == 'انجب' then
 TextReply = '• صُِـﮧاَٰرِٰ سٌٍتّٰـﮧاَٰدِٰيَٰ🐸❤️ֆ'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'تحبني' then
-TextReply = '• مٍٰـﮧاَٰدِٰرِٰيَٰ اَٰفِٰكٍٰـﮧرِٰ🙁😹ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
