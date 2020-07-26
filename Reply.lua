@@ -27,7 +27,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == '😐' then
-TextReply = '• شَُـبٌِٰيَٰـكٍٰ صُِـﮧﮧاَٰفِٰنٍٰ عٍِّ خّٰاَٰلْٰتّٰـہكٍٰ😹🖤ֆ'
+TextReply = '• شَُـبٌِٰيَٰـكٍٰ صُِـﮧﮧاَٰفِٰنٍٰ 😂'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -91,7 +91,7 @@ TextReply = '• وٍّيَٰـﮧنٍٰ رِٰاَٰيَٰـہحٌٰ خّٰلٰ
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'واكف' then
+if text == 'واقف' then
 TextReply = '• بٌِٰنٍٰلْٰخّٰـﮧرِٰاَٰ وٍّيَٰـﮧنٍٰ وٍّاَٰكٍٰـﮧفِٰ😐😒ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
@@ -127,7 +127,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == '😳' then
-TextReply = '• هَٰہۧـاَٰ بٌِٰسٌٍ لْٰاَٰ شَُفِٰـﮧتّٰ عٍِّمٍٰتّٰـﮧكٍٰ اَٰلْٰعٍِّـﮧوٍّ໑بٌِٰهَٰہۧ😐😹ֆ'
+TextReply = '• شفيـك يروحي 😂'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -206,7 +206,7 @@ TextReply = '• خّٰـﮧاَٰلْٰتّٰـہكٍٰ 🌚ֆ🌝'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'البوت واكف' then
+if text == 'البوت واقف' then
 TextReply = '• لْٰجًِّـﮧذَْبٌِٰ حٌٰبٌِٰـہيَٰ 🌞⚡️ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
@@ -238,11 +238,6 @@ return false
 end
 if text == 'وين' then
 TextReply = '• بٌِٰـﮧﮧأرِٰض اَٰلْٰلْٰهَٰہۧ اَٰلْٰـہوٍّاَٰسٌٍعٍِّـﮧهَٰہۧ😽💜ֆ'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'كافي لغوة' then
-TextReply = '• كٍٰـيَٰفِٰنٍٰـﮧهَٰہۧ نٍٰتّٰـﮧهَٰہۧ شَُعٍِّـہلْٰيَٰكٍٰ😼👊ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
