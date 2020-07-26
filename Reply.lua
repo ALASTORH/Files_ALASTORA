@@ -81,18 +81,8 @@ TextReply = '•دِٰيَٰلْٰـﮧهَٰہۧ شَُـﮧوٍّ୭نٍٰ ا�
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'باي' then
-TextReply = '• وٍّيَٰـﮧنٍٰ رِٰاَٰيَٰـہحٌٰ خّٰلْٰيَٰنٍٰـﮧهَٰہۧ مٍٰتّٰوٍّنٍٰسٌٍيَٰـﮧنٍٰ🙁💔ֆ'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
 if text == 'وين المدير' then
 TextReply = '• لْٰيَٰـﮧشَُ شَُتّٰـﮧرِٰيَٰدِٰ🤔ֆ'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'انجب' then
-TextReply = '• صُِـﮧاَٰرِٰ سٌٍتّٰـﮧاَٰدِٰيَٰ🐸❤️ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
