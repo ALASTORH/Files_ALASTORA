@@ -6,12 +6,12 @@ TextReply = '• هَٰہۧـﮧﮧلْٰاَٰوٍّ໑اَٰتّٰ 🌝☄ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'شلونكم' or text == 'شخباركم' then
+if text == 'شلونكم' then
 TextReply = '• تّٰمٍٰـﮧاَٰمٍٰ وٍّاَٰنٍٰتّٰـہهَٰہۧ 😽⚡️ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'شلونك' or text == 'شلونكم' then
+if text == 'شلونك' then
 TextReply = '• اَٰلْٰـحٌٰمٍٰـﮧﮧدِٰاَٰلْٰلْٰهَٰہۧ وٍّ୭اَٰنٍٰتّٰـهَٰہۧ 😼💛ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
@@ -21,8 +21,13 @@ TextReply = '• دِٰوٍّ൭مٍٰ يَٰـﮧﮧاَٰرِٰبٌِٰ 😻�
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'هلاو' or text == 'هلا' then
+if text == 'هلاو' then
 TextReply = '• هَٰہۧـہ୪وٍّ୭اَٰتّٰ حٌٰبٌِٰـﮧيَٰ 🤗🌟ֆ'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == '😐' then
+TextReply = '• شَُـبٌِٰيَٰـكٍٰ صُِـﮧﮧاَٰفِٰنٍٰ عٍِّ خّٰاَٰلْٰتّٰـہكٍٰ😹🖤ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -41,7 +46,12 @@ TextReply = '• شَُـوٍّ໑فِٰلْٰيَٰ وٍّيَٰـاَٰكٍٰ 
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'كلخرا' or text == 'كل خرا' or text == 'كل زق' then
+if text == 'لتزحف' then
+TextReply = '• دِٰعٍِّـوٍّ໑فِٰهَٰہۧ زًَاَٰحٌٰـﮧفِٰ عٍِّ خّٰاَٰلْٰـتّٰكٍٰ خّٰـلْٰيَٰ يَٰسٌٍـہتّٰفِٰاَٰدِٰ😾🌈ֆ'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'كلخرا' then
 TextReply = '• خّٰـﮧرِٰاَٰ يَٰتّٰـہرِٰسٌٍ حٌٰلْٰكٍٰـﮧكٍٰ يَٰاَٰخّٰـﮧرِٰاَٰاَٰ💩ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
@@ -72,7 +82,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'احبك' then
-TextReply = 'يـّسَـْلْمـّﯙو گلگ ذۈق' then
+TextReply = '•حٌٰبٌِٰيَٰبٌِٰـﮧيَٰ وٍّنٍٰـﮧيَٰ هَٰہۧــمٍٰ😻👅ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -81,8 +91,8 @@ TextReply = '• وٍّيَٰـﮧنٍٰ رِٰاَٰيَٰـہحٌٰ خّٰلٰ
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'واقف' then
-TextReply = '•لُاوَالُلُُه شِغًالُ مٌحُدِ يَقًدِرَ يَوَقًفَنَيَ'
+if text == 'واكف' then
+TextReply = '• بٌِٰنٍٰلْٰخّٰـﮧرِٰاَٰ وٍّيَٰـﮧنٍٰ وٍّاَٰكٍٰـﮧفِٰ😐😒ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -96,38 +106,13 @@ TextReply = '• صُِـﮧاَٰرِٰ سٌٍتّٰـﮧاَٰدِٰيَٰ🐸
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'سلام' or text == 'سلام عليكم' or text == 'السلام عليكم' then
-TextReply = 'وٍعَلْيّكَمُ ٱلْسَلآمّ وٍرٍحَمُةٌ اللَّــْـْہ ۆبُركَاتة'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'يعطيك العافيه' or text== 'الله يعطيك العافيه' then
-TextReply = ' آللّہ يَـــعـــافيّگ'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'يسلمو' then
-TextReply = 'يـسلمـكـ ربي'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'تسلم' then
-TextReply = 'الله يَـسِلُـمكـ'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'كيفك' or text == 'كيف الحال ' or text == 'كِيَفَكِمٌ' then
-TextReply = '• بـّخـْيرٌ دامـّگ بـْخـّيرٌ يـّٱلـّغـٌالـّے'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
 if text == 'تحبني' then
 TextReply = '• مٍٰـﮧاَٰدِٰرِٰيَٰ اَٰفِٰكٍٰـﮧرِٰ🙁😹ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == '🌚' then
-TextReply = '• فِٰـدِيَتْ صٌّخامٌكِ' then
+TextReply = '• فِٰـﮧدِٰيَٰتّٰ صُِخّٰـﮧاَٰمٍٰكٍٰ🙊👄ֆ '
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -137,7 +122,12 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == '😒' then
-TextReply = 'شِفَيَكِ قًالُبّ ٌخلُقًتْكِـ حُبّيَ' then
+TextReply = '• شَُبٌِٰيَٰـﮧكٍٰ كٍٰاَٰلْٰـﮧبٌِٰ خّٰلْٰقٍٰتّٰـﮧكٍٰ😟🐈ֆ'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == '😳' then
+TextReply = '• هَٰہۧـاَٰ بٌِٰسٌٍ لْٰاَٰ شَُفِٰـﮧتّٰ عٍِّمٍٰتّٰـﮧكٍٰ اَٰلْٰعٍِّـﮧوٍّ໑بٌِٰهَٰہۧ😐😹ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -216,18 +206,18 @@ TextReply = '• خّٰـﮧاَٰلْٰتّٰـہكٍٰ 🌚ֆ🌝'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'البوت واقف' then
+if text == 'البوت واكف' then
 TextReply = '• لْٰجًِّـﮧذَْبٌِٰ حٌٰبٌِٰـہيَٰ 🌞⚡️ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'سلام عليكم' then
-TextReply = 'وٍعَلْيّكَمُ ٱلْسَلآمّ وٍرٍحَمُةٌ اللَّــْـْہ ۆبُركَاتة'
+if text == 'غلس' then
+TextReply = '• وٍّ໑كٍٰ بٌِٰـﮧسٌٍ سٌٍـﮧوٍّ୭لْٰفِٰلْٰيَٰ اَٰلْٰسٌٍـﮧاَٰلْٰفِٰهَٰہۧ بٌِٰعٍِّـﮧدِٰيَٰنٍٰ🌝🦅ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'سلام' then
-TextReply = 'وٍعَلْيّكَمُ ٱلْسَلآمّ وٍرٍحَمُةٌ اللَّــْـْہ ۆبُركَاتة'
+if text == 'حارة' then
+TextReply = '• تّٰسٌٍـہمٍٰطَُِ سٌٍمٍٰـﮧطَُِ غِِٰيَٰـﮧرِٰ يَٰرِٰحٌٰمٍٰنٍٰـﮧهَٰہۧ اَٰلْٰاَٰعٍِّبٌِٰـاَٰدِٰيَٰ وٍّيَٰنٍٰـہطَُِيَٰ عٍِّطَُِلْٰـﮧهَٰہۧ 😾💔ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -236,7 +226,7 @@ TextReply = '• نٍٰشَُـﮧاَٰلْٰلْٰهَٰہۧ دِٰاَٰيٰ�
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'ههههه' or text == 'هههههههههه' then
+if text == 'ههههه' then
 TextReply = '• نٍٰشَُـﮧاَٰلْٰلْٰهَٰہۧ دِٰاَٰيَٰمٍٰـﮧهَٰہۧ💆🏻‍♂💘ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
@@ -258,6 +248,11 @@ return false
 end
 if text == 'نايمين' then
 TextReply = '• اَٰنٍٰـﮧيَٰ سٌٍهَٰہۧـہرِٰاَٰنٍٰ اَٰحٌٰرِٰسٌٍـﮧكٍٰمٍٰ مٍٰـﮧטּ تّٰـرِٰاَٰمٍٰـﮧبٌِٰ😿😹🙌ֆ'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'اكو احد' then
+TextReply = '• يَٰ عٍِّيَٰـنٍٰـﮧيَٰ اَٰنٍٰـہيَٰ مٍٰـوٍّ૭جًِّـﮧوٍّدِٰ🌝✨ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
