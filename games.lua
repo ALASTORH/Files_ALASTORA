@@ -33,7 +33,7 @@ Text_Games = [[
 🎯 | لـعـبـة الـمـعـانـي
 🎯 | لـعـبـة (علم) الدول
 ●ـ▬ـ▬ஜ۩۞۩ஜ▬ـ▬ـ●
-('..SUDO:USR..')
+['('..SUDO:USR..')']
 ]]
 send(msg.chat_id_, msg.id_,Text_Games) 
 end
