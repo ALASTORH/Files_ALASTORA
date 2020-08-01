@@ -152,7 +152,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'لا' then
-TextReply = '• لا على طول مافيه ايه🤭'
+TextReply = '• على طول لا مافيه ايه🤭'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -227,7 +227,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text =='ليش' then
-TextReply = 'مدري'
+TextReply = 'لاتسئلني مدري 🙄'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -237,7 +237,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'اي' then
-TextReply = 'اي على طول مافيه لا🤭'
+TextReply = 'علئ طول اي مافيه لا 🤭'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
