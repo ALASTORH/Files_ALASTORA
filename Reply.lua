@@ -111,8 +111,8 @@ TextReply = '• صُِبٌِٰاَٰحٌٰـہكٍٰ عٍِّسٌٍـہلْٰ �
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'كفو' then
-TextReply = '• اَٰهَٰہۧ كٍٰفِٰـﮧوٍّ໑ يَٰبٌِٰہوٍّ୭ اَٰلْٰضـلْٰہوٍّ୭عٍِّ😹ֆ'
+if text == '😭' then
+TextReply = 'لتبكي حياتي 😭😭'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -132,7 +132,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'شسمك' then
-TextReply = '• اَٰسٌٍمٍٰـﮧهَٰہۧ عٍِّبٌِٰـﮧوٍّ໑سٌٍيَٰ لْٰـوٍّ૭سٌٍہيَٰ😾😹💛ֆ'
+TextReply = 'عوف اسمي وانطيني رقمك بلخاص ههه🙊'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -196,8 +196,8 @@ TextReply = '• اَٰنٍٰـﮧيَٰ سٌٍهَٰہۧـہرِٰاَٰنٍٰ 
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'اكو احد' then
-TextReply = '• يَٰ عٍِّيَٰـنٍٰـﮧيَٰ اَٰنٍٰـہيَٰ مٍٰـوٍّ૭جًِّـﮧوٍّدِٰ🌝✨ֆ'
+if text == '😢' then
+TextReply = 'لتبكي حياتي😢'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -248,6 +248,11 @@ return false
 end
 if text == 'اهلين' then
 TextReply = 'اهلين فيك☺️'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'شغال' then
+TextReply = 'نعم عزيزي باقي واتمدد 😎🌿'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
