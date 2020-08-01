@@ -1,16 +1,6 @@
 local function Reply(msg)
 local text = msg.content_.text_
 if not database:get(bot_id..'Reply:Status'..msg.chat_id_) then
-if text == 'شلونكم' then
-TextReply = '• تّٰمٍٰـﮧاَٰمٍٰ وٍّاَٰنٍٰتّٰـہهَٰہۧ 😽⚡️ֆ'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'شلونك' then
-TextReply = '• اَٰلْٰـحٌٰمٍٰـﮧﮧدِٰاَٰلْٰلْٰهَٰہۧ وٍّ୭اَٰنٍٰتّٰـهَٰہۧ 😼💛ֆ'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
 if text == 'تمام' then
 TextReply = '• دِٰوٍّ൭مٍٰ يَٰـﮧﮧاَٰرِٰبٌِٰ 😻🌪ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
@@ -18,11 +8,6 @@ return false
 end
 if text == '😐' then
 TextReply = '• شَُـبٌِٰيَٰـكٍٰ صُِـﮧﮧاَٰفِٰنٍٰ 😂'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'هاي' then
-TextReply = '• هَٰہۧـاَٰيَٰـﮧﮧاَٰتّٰ يَٰـرِٰوٍّحٌٰـہيَٰ 🙋🏼‍♂💙ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -166,8 +151,8 @@ TextReply = '• لْٰتّٰجًِّيَٰـﮧبٌِٰ اَٰسٌٍمٍٰـﮧ
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'منو ديحذف رسائلي' then
-TextReply = '• خّٰـﮧاَٰلْٰتّٰـہكٍٰ 🌚ֆ🌝'
+if text == 'لا' then
+TextReply = '• لا على طول مافيه ايه🤭'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
