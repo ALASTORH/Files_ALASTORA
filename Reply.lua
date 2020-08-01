@@ -1,11 +1,6 @@
 local function Reply(msg)
 local text = msg.content_.text_
 if not database:get(bot_id..'Reply:Status'..msg.chat_id_) then
-if text == 'هلو' then
-TextReply = '• هَٰہۧـﮧﮧلْٰاَٰوٍّ໑اَٰتّٰ 🌝☄ֆ'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
 if text == 'شلونكم' then
 TextReply = '• تّٰمٍٰـﮧاَٰمٍٰ وٍّاَٰنٍٰتّٰـہهَٰہۧ 😽⚡️ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
@@ -18,11 +13,6 @@ return false
 end
 if text == 'تمام' then
 TextReply = '• دِٰوٍّ൭مٍٰ يَٰـﮧﮧاَٰرِٰبٌِٰ 😻🌪ֆ'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'هلاو' then
-TextReply = '• هَٰہۧـہ୪وٍّ୭اَٰتّٰ حٌٰبٌِٰـﮧيَٰ 🤗🌟ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -77,12 +67,12 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'اكرهك' then
-TextReply = '•دِٰيَٰلْٰـﮧهَٰہۧ شَُـﮧوٍّ୭نٍٰ اَٰطَُِيَٰـقٍٰكٍٰ نٍٰـيَٰ 🙎🏼‍♂🖤ֆ'
+TextReply = 'شلون اطيقك انا 😌'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'وين المدير' then
-TextReply = '• لْٰيَٰـﮧشَُ شَُتّٰـﮧرِٰيَٰدِٰ🤔ֆ'
+TextReply = 'ليش شتبي منه 🤔'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -97,7 +87,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == '😒' then
-TextReply = '• شَُبٌِٰيَٰـﮧكٍٰ كٍٰاَٰلْٰـﮧبٌِٰ خّٰلْٰقٍٰتّٰـﮧكٍٰ😟🐈ֆ'
+TextReply = 'شفيك قالب خلقتك🤔'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -247,6 +237,41 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'انتة منو' then
+TextReply = '• اَٰنٍٰـﮧﮧيَٰ بٌِٰـوٍّ໑تّٰ💨🌝ֆ'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text =='ليش' then
+TextReply = 'مدري'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'اها' then
+TextReply = 'اي'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'اي' then
+TextReply = 'اي على طول مافيه لا🤭'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == '🤣' then
+TextReply = 'دايمه أن شاءالله'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'اهلين' then
+TextReply = 'اهلين فيك☺️'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'ارحب' then
+TextReply = 'البقى'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'انت من' then
 TextReply = '• اَٰنٍٰـﮧﮧيَٰ بٌِٰـوٍّ໑تّٰ💨🌝ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
