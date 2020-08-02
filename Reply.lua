@@ -2,7 +2,7 @@ local function Reply(msg)
 local text = msg.content_.text_
 if not database:get(bot_id..'Reply:Status'..msg.chat_id_) then
 if text == 'تمام' then
-TextReply = '• دِٰوٍّ൭مٍٰ يَٰـﮧﮧاَٰرِٰبٌِٰ 😻🌪ֆ'
+TextReply = 'دُۈۈۈمٌ يَـــآرَبّ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -121,8 +121,8 @@ TextReply = '• اَٰلْٰمٍٰطَُِلْٰـﮧوٍّ໑بٌِٰ !😕�
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'اها' then
-TextReply = '• يَٰبٌِٰ قٍٰاَٰبٌِٰـﮧلْٰ اَٰغِِٰشَُـﮧكٍٰ شَُسٌٍاَٰلْٰفِٰـﮧهَٰہۧ حٌٰبٌِٰ😐🌝ֆ'
+if text == 'يعطيك العافيه' then
+TextReply = 'الله يعافيـكـ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -142,7 +142,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'مساء الخير' then
-TextReply = '• مٍٰسٌٍـﮧاَٰء اَٰلْٰحٌٰـﮧبٌِٰ يَٰحٌٰہبٌِٰحٌٰہبٌِٰ🌛🔥ֆ'
+TextReply = 'مَـــسُأُء أَلَــوّورّد'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
