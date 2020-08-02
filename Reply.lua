@@ -107,7 +107,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'صباح الخير' then
-TextReply = '• صُِبٌِٰاَٰحٌٰـہكٍٰ عٍِّسٌٍـہلْٰ يَٰعٍِّسٌٍـﮧلْٰ😼🤞ֆ'
+TextReply = 'صـــِبُأِحّ أَلـْﯞَورّد'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
