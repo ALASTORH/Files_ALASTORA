@@ -297,7 +297,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'زباله' then
-TextReply = 'الفاضك حبيبي😒'
+TextReply = 'الفاضك ياحلوو😒😒'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -327,12 +327,12 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'حمار' then
-TextReply = 'الفاظك حبيبي😒'
+TextReply = 'الفاظك ياحلوو😒'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'كلب' then
-TextReply = 'الفاضك حبيبي😒'
+TextReply = 'الفاضك ياحلوو😒'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
