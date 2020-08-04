@@ -475,7 +475,7 @@ name = string.gsub(name,'15','25-10=')
 name = string.gsub(name,'39','44-5=')
 name = string.gsub(name,'5','12+1-8=')
 name = string.gsub(name,'16','16+16-16=')
-send(msg.chat_id_, msg.id_,'كـم نـاتج العملية الحسابية التاليه ~ {'..name..'}')
+send(msg.chat_id_, msg.id_,'كم ناتج العمليه الحسابيه التاليه » {'..name..'}')
 return false
 end
 end
