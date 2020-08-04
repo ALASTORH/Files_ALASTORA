@@ -362,7 +362,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == '👀' then
-TextReply = '🖐️👀'
+TextReply = 'ُهــــلُا بّالُــزُيَــنَ 👀'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
