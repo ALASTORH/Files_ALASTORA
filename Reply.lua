@@ -67,7 +67,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == '🙄' then
-TextReply = 'عدل عيونك لتصير احول 😜'
+TextReply = 'نزل عيونك لتصير احول 😜'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -358,6 +358,61 @@ return false
 end
 if text == 'حبيتك' then
 TextReply = 'لا ياشـيـخ??'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == '👀' then
+TextReply = '🖐️👀'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == '😍' then
+TextReply = 'على وش خاق يبعدي?'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'اسمع' then
+TextReply = 'الحروف تُقرأ ولا تُسمع😌'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'تفضل' then
+TextReply = '🌷رَبّـ❤ـيٌ يزيدك من فضله'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'تفضلي' then
+TextReply = '🌷رَبّـ❤ـيٌ يزيدك من فضله'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'بوت رمه' then
+TextReply = 'حرام تشبهني فيك😭😂😂'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'والله' then
+TextReply = 'مصدقك بدون ماتحلف🌚🌷'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'انشهد' then
+TextReply = 'ياكثر ماتشهد 🙃'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'جميل' then
+TextReply = 'انــYOUــت الاجمل ♥'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'وينك' then
+TextReply = 'دور بقلبك وتلقاني😍💖'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == '☺️' then
+TextReply = 'لبى الابتسامه♥'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
