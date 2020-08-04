@@ -52,7 +52,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'اكرهك' then
-TextReply = 'شلون اطيقك انا 😌'
+TextReply = 'على اساس انا اموت فيك يعني🏃'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
@@ -413,6 +413,26 @@ return false
 end
 if text == '☺️' then
 TextReply = 'لبى الابتسامه♥'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'حيوان' then
+TextReply = 'حرام تشبهني فيك😂'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'حيوانه' then
+TextReply = 'حرام تشبهني فيك😜'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'تعالي' then
+TextReply = 'وين اجي🤔'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'امزح' then
+TextReply = '🔴طيب مزحك بايخ 😞'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
