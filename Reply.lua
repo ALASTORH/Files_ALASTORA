@@ -171,16 +171,6 @@ TextReply = '• تّٰسٌٍـہمٍٰطَُِ سٌٍمٍٰـﮧطَُِ غِٰ
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == 'هههه' then
-TextReply = '• نٍٰشَُـﮧاَٰلْٰلْٰهَٰہۧ دِٰاَٰيَٰمٍٰـﮧهَٰہۧ💆🏻‍♂💘ֆ'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
-if text == 'ههههه' then
-TextReply = '• نٍٰشَُـﮧاَٰلْٰلْٰهَٰہۧ دِٰاَٰيَٰمٍٰـﮧهَٰہۧ💆🏻‍♂💘ֆ'
-send(msg.chat_id_, msg.id_,'['..TextReply..']')
-return false
-end
 if text == '😹' then
 TextReply = '• نٍٰشَُـﮧاَٰلْٰلْٰهَٰہۧ دِٰاَٰيَٰمٍٰـﮧهَٰہۧ💆🏻‍♂💘ֆ'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
