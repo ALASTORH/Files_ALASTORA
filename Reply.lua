@@ -472,13 +472,18 @@ TextReply = 'هذا الله يخلف مهما تقول له أو تصارخ ع�
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
-if text == '😠' then
-TextReply = 'ليش معصب???'
+if text == 'يلا' then
+TextReply = 'على وين ياكامل الزين 🌷'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == '😘' then
 TextReply = 'ويل حالي🙈♥'
+send(msg.chat_id_, msg.id_,'['..TextReply..']')
+return false
+end
+if text == 'اقول' then
+TextReply = 'قوووول جعل ما يقول غيرك 🤪'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
