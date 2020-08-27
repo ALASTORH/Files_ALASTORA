@@ -53,13 +53,13 @@ database:del(bot_id..'Set:Sma'..msg.chat_id_)
 Random = {'🍏','🍎','🍐','🍊','??','🍉','🍇','🍓','🍈','🍒','🍑','🍍','??','🥝','🍅','🍆','🥑','🥦','🥒','🌶','🌽','🥕','🥔','🥖','🥐','🍞','🥨','🍟','🧀','🥚','🍳','🥓','🥩','🍗','🍖','🌭','🍔','🍠','🍕','🥪','🥙','☕️','🍵','🥤','🍶','🍺','🍻','🏀','⚽️','🏈','⚾️','🎾','🏐','🏉','🎱','🏓','🏸','🥅','🎰','🎮','🎳','🎯','🎲','🎻','🎸','🎺','🥁','🎹','🎼','🎧','🎤','🎬','🎨','🎭','🎪','🎟','🎫','🎗','🏵','🎖','🏆','🥌','🛷','🚗','🚌','🏎','🚓','🚑','🚚','🚛','🚜','🇮🇶','⚔','🛡','🔮','🌡','💣','📌','📍','📓','📗','📂','📅','📪','📫','📬','📭','⏰','📺','🎚','☎️','📡'}
 SM = Random[math.random(#Random)]
 database:set(bot_id..'Random:Sm'..msg.chat_id_,SM)
-send(msg.chat_id_, msg.id_,'🎗️| اسرع واحد يدز هاذا السمايل ? » {`'..SM..'`}')
+send(msg.chat_id_, msg.id_,'*🎗️| اسرع واحد يدز هاذا السمايل ? » {`'..SM..'`}*')
 return false
 end
 end
 if text == ''..(database:get(bot_id..'Random:Sm'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Set:Sma'..msg.chat_id_) then
 if not database:get(bot_id..'Set:Sma'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'*😍| ذكي وربي الف مبروك لقد فزت وربحت نقطة🥇 \n♻¦ للعب مره اخرى ارسل »{ سمايل , سمايلات }*')
+send(msg.chat_id_, msg.id_,'* 🎁  اموت على الذكاء كفو اجابتك صحيحه👌🏼🥇 \n♻¦ للعب مره اخرى ارسل »{ سمايل , سمايلات }*')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:Sma'..msg.chat_id_,true)
@@ -132,7 +132,7 @@ end
 ------------------------------------------------------------------------
 if text == ''..(database:get(bot_id..'Klam:Speed'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Speed:Tr'..msg.chat_id_) then
 if not database:get(bot_id..'Speed:Tr'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'*😍| كفو وربي الف مبروك لقد فزت وربحت نقطة🥇 \n♻¦ للعب مره اخرى ارسل »{ الترتيب , ترتيب }*')
+send(msg.chat_id_, msg.id_,'*😍| اموت على الذكاء كفو اجابتك صحيحه👌🏼🥇 \n♻¦ للعب مره اخرى ارسل »{ الترتيب , ترتيب }*')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Speed:Tr'..msg.chat_id_,true)
@@ -186,14 +186,14 @@ name = string.gsub(name,'الثلج','انا ابن الماء فان تركون
 name = string.gsub(name,'الاسفنج','كلي ثقوب ومع ذالك احفض الماء فمن اكون ؟')
 name = string.gsub(name,'الصوت','اسير بلا رجلين ولا ادخل الا بالاذنين فمن انا ؟')
 name = string.gsub(name,'بلم','حامل ومحمول نصف ناشف ونصف مبلول فمن اكون ؟ ')
-send(msg.chat_id_, msg.id_,'🎗️| اسرع واحد يحل الحزوره ↓\n {'..name..'}')
+send(msg.chat_id_, msg.id_,'*🎗️| اسرع واحد يحل الحزوره ↓\n {'..name..'}*')
 return false
 end
 end
 ------------------------------------------------------------------------
 if text == ''..(database:get(bot_id..'Klam:Hzor'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Set:Hzora'..msg.chat_id_) then
 if not database:get(bot_id..'Set:Hzora'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'😍| كفوو وربي الف مبروك لقد فزت وربحت نقطة🥇 \n♻¦ للعب مره اخرى ارسل »{ حزوره }')
+send(msg.chat_id_, msg.id_,'*😍| كفوو وربي الف مبروك لقد فزت وربحة نقطة🥇 \n♻¦ للعب مره اخرى ارسل »{ حزوره }*')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:Hzora'..msg.chat_id_,true)
@@ -239,14 +239,14 @@ name = string.gsub(name,'زرافه','🦒')
 name = string.gsub(name,'قنفذ','🦔')
 name = string.gsub(name,'تفاحه','🍎')
 name = string.gsub(name,'باذنجان','🍆')
-send(msg.chat_id_, msg.id_,'🎗️| اسرع واحد يدز معنى السمايل » {'..name..'}')
+send(msg.chat_id_, msg.id_,'*🎗️| اسرع واحد يدز معنى السمايل » {'..name..'}*')
 return false
 end
 end
 ------------------------------------------------------------------------
 if text == ''..(database:get(bot_id..'Maany'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Set:Maany'..msg.chat_id_) then
 if not database:get(bot_id..'Set:Maany'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'😍| الف مبروك لقد فزت وربحت نقطة🥇\n♻¦ للعب مره اخرى ارسل »{ معاني }')
+send(msg.chat_id_, msg.id_,'*😍| الف مبروك لقد فزت وربحت نقطة🥇\n♻¦ للعب مره اخرى ارسل »{ معاني }*')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:Maany'..msg.chat_id_,true)
@@ -291,14 +291,14 @@ name = string.gsub(name,'موعطشان','عطشان')
 name = string.gsub(name,'خوش ولد','موخوش ولد')
 name = string.gsub(name,'حمار','مطي')
 name = string.gsub(name,'هادئ','عصبي')
-send(msg.chat_id_, msg.id_,'🎗️| اسرع واحد يدز العكس » {'..name..'}')
+send(msg.chat_id_, msg.id_,'*🎗️| اسرع واحد يدز العكس » {'..name..'}*')
 return false
 end
 end
 ------------------------------------------------------------------------
 if text == ''..(database:get(bot_id..'Set:Aks:Game'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Set:Aks'..msg.chat_id_) then
 if not database:get(bot_id..'Set:Aks'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'😍|كفو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻¦ للعب مره اخرى ارسل »{ العكس }')
+send(msg.chat_id_, msg.id_,'*😍|كفو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻¦ للعب مره اخرى ارسل »{ العكس }ظ*')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:Aks'..msg.chat_id_,true)
@@ -356,11 +356,11 @@ return false  end
 local GETNUM = database:get(bot_id.."Games:Bat"..msg.chat_id_)
 if tonumber(NUM) == tonumber(GETNUM) then
 database:del(bot_id.."SET:GAME" .. msg.chat_id_ .. "" .. msg.sender_user_id_)   
-send(msg.chat_id_, msg.id_,'📮| مبروك فزت وطلعت المحيبس بل ايد رقم { '..NUM..' }\n✨|  لقد حصلت على { 3 }من نقاط يمكنك استبدالهن برسائل ')
+send(msg.chat_id_, msg.id_,'*📮| مبروك فزت وطلعت المحيبس بل ايد رقم { '..NUM..' }\n✨|  لقد حصلت على { 3 }من نقاط يمكنك استبدالهن برسائل *')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_,3)  
 elseif tonumber(NUM) ~= tonumber(GETNUM) then
 database:del(bot_id.."SET:GAME" .. msg.chat_id_ .. "" .. msg.sender_user_id_)   
-send(msg.chat_id_, msg.id_,'😔| للاسف لقد خسرت \n🎗️| المحيبس بل ايد رقم { '..GETNUM..' }\n💥| حاول مره اخرى للعثور على المحيبس')
+send(msg.chat_id_, msg.id_,'*😔| للاسف لقد خسرت \n🎗️| المحيبس بل ايد رقم { '..GETNUM..' }\n💥| حاول مره اخرى للعثور على المحيبس*')
 end
 end
 end
@@ -433,7 +433,7 @@ name = string.gsub(name,'🕒','🕒🕒🕒🕒🕒🕒🕓🕒🕒🕒')
 name = string.gsub(name,'🕤','🕥🕥🕥🕥🕥🕤🕥🕥🕥')
 name = string.gsub(name,'⌛️','⏳⏳⏳⏳⏳⏳⌛️⏳⏳')
 name = string.gsub(name,'📅','📆📆📆📆📆📆📅📆📆')
-send(msg.chat_id_, msg.id_,'🎗️| اسرع واحد يدز الاختلاف » {'..name..'}')
+send(msg.chat_id_, msg.id_,'*🎗️| اسرع واحد يدز الاختلاف » {'..name..'}*')
 return false
 end
 end
@@ -441,7 +441,7 @@ end
 if text == ''..(database:get(bot_id..':Set:Moktlf'..msg.chat_id_) or '')..'' then 
 if not database:get(bot_id..'Set:Moktlf:Bot'..msg.chat_id_) then 
 database:del(bot_id..':Set:Moktlf'..msg.chat_id_)
-send(msg.chat_id_, msg.id_,'😍|  كفوو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻¦ للعب مره اخرى ارسل »{ المختلف }')
+send(msg.chat_id_, msg.id_,'*😍|  كفوو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻¦ للعب مره اخرى ارسل »{ المختلف }*')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:Moktlf:Bot'..msg.chat_id_,true)
@@ -475,7 +475,7 @@ name = string.gsub(name,'15','25-10=')
 name = string.gsub(name,'39','44-5=')
 name = string.gsub(name,'5','12+1-8=')
 name = string.gsub(name,'16','16+16-16=')
-send(msg.chat_id_, msg.id_,'كم ناتج العمليه الحسابيه التاليه » {'..name..'}')
+send(msg.chat_id_, msg.id_,'*كم ناتج العمليه الحسابيه التاليه » {'..name..'}*')
 return false
 end
 end
@@ -483,7 +483,7 @@ end
 if text == ''..(database:get(bot_id..':Set:Ryadeat'..msg.chat_id_) or '')..'' then 
 if not database:get(bot_id..'Set:Ryadeat:Bot'..msg.chat_id_) then 
 database:del(bot_id..':Set:Ryadeat'..msg.chat_id_)
-send(msg.chat_id_, msg.id_,'😍| كفوو عليك الف مبروك لقد فزت وربحت نقطة🥇\n♻| للعب مره اخرى ارسل »{ رياضيات }')
+send(msg.chat_id_, msg.id_,'*😍| كفوو عليك الف مبروك لقد فزت وربحت نقطة🥇\n♻| للعب مره اخرى ارسل »{ رياضيات }*')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:Ryadeat:Bot'..msg.chat_id_,true)
@@ -516,7 +516,7 @@ name = string.gsub(name,'اعلم','I know')
 name = string.gsub(name,'تمساح','crocodile')
 name = string.gsub(name,'مختلف','Different')
 name = string.gsub(name,'ذكي','Intelligent')
-send(msg.chat_id_, msg.id_,'ماذا تعني هذه الكلمة ~ { '..name..' }')
+send(msg.chat_id_, msg.id_,'*ماذا تعني هذه الكلمة ~ { '..name..' }*')
 return false
 end
 end
@@ -525,7 +525,7 @@ end
 if text == ''..(database:get(bot_id..':Set:English'..msg.chat_id_) or '')..'' then 
 if not database:get(bot_id..'Set:English:Bot'..msg.chat_id_) then 
 database:del(bot_id..':Set:English'..msg.chat_id_)
-send(msg.chat_id_, msg.id_,'😍| كفوو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻| للعب مره اخرى ارسل »{ `انجليزي` }')
+send(msg.chat_id_, msg.id_,'*😍| كفوو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻| للعب مره اخرى ارسل »{ `انجليزي` }*')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:English:Bot'..msg.chat_id_,true)
@@ -565,7 +565,7 @@ name = string.gsub(name,'يعرفك','اللي ما.......... ما يثمنك')
 name = string.gsub(name,'زيد','كأنك يا بو ..........ما غزيت')
 name = string.gsub(name,'اقرد','أرضي بقردك لا يجيك ......... منه')
 name = string.gsub(name,'اليد','العين بصيره و.......... قصيره.')
-send(msg.chat_id_, msg.id_,'🎗️| اسرع واحد يكمل المثل » {'..name..'}')
+send(msg.chat_id_, msg.id_,'*🎗️| اسرع واحد يكمل المثل » {'..name..'}*')
 return false
 end
 end
@@ -573,7 +573,7 @@ end
 if text == ''..(database:get(bot_id..'Set:Amth'..msg.chat_id_) or '')..'' then 
 if not database:get(bot_id..'Set:Amth:Bot'..msg.chat_id_) then 
 database:del(bot_id..'Set:Amth'..msg.chat_id_)
-send(msg.chat_id_, msg.id_,'😍|  كفوو عليك الف مبروك لقد فزت وربحت 3 نقاط🥉\n♻¦ للعب مره اخرى ارسل »{ امثله }')
+send(msg.chat_id_, msg.id_,'*😍|  كفوو عليك الف مبروك لقد فزت وربحت 3 نقاط🥉\n♻¦ للعب مره اخرى ارسل »{ امثله }*')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 3)  
 end
 database:set(bot_id..'Set:Amth:Bot'..msg.chat_id_,true)
@@ -611,14 +611,14 @@ name = string.gsub(name,'الفهد','ما هو أسرع حيوان بري في 
 name = string.gsub(name,'النمر','ما هو أكبر أنواع القطط في العالم؟')
 name = string.gsub(name,'باسكال','من هو مخترع الآلة الحاسبة؟')
 name = string.gsub(name,'1939','متى وقعت الحرب العالمية الثانية?')
-send(msg.chat_id_, msg.id_,'🎗️| اسرع واحد يحل اللغز » {'..name..'}')
+send(msg.chat_id_, msg.id_,'*🎗️| اسرع واحد يحل اللغز » {'..name..'}*')
 return false
 end
 end
 ------------------------------------------------------------------------
 if text == ''..(database:get(bot_id..'Klam:Bos'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Bos:Tr'..msg.chat_id_) then
 if not database:get(bot_id..'Bos:Tr'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'😍| كفو وربي الف مبروك لقد فزت وربحت نقطة🥇 \n♻¦ للعب مره اخرى ارسل »{ الاسئله , اسئله }')
+send(msg.chat_id_, msg.id_,'*😍| كفو وربي الف مبروك لقد فزت وربحت نقطة🥇 \n♻¦ للعب مره اخرى ارسل »{ الاسئله , اسئله }*')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Bos:Tr'..msg.chat_id_,true)
@@ -669,7 +669,7 @@ name = string.gsub(name,'زرافه','زرافه')
 name = string.gsub(name,'قنفذ','قنفذ')
 name = string.gsub(name,'سورس','سورس')
 name = string.gsub(name,'باذنجان','باذنجان')
-send(msg.chat_id_, msg.id_,'🎗️| اسرع واحد يرسل الكلمة » {'..name..'}')
+send(msg.chat_id_, msg.id_,'*🎗️| اسرع واحد يرسل الكلمة » {'..name..'}*')
 return false
 end
 end
@@ -677,7 +677,7 @@ end
  if text == ''..(database:get(bot_id..':Set:alasra'..msg.chat_id_) or '')..'' then 
 if not database:get(bot_id..'Set:alasra:Bot'..msg.chat_id_) then 
 database:del(bot_id..':Set:alasra'..msg.chat_id_)
-send(msg.chat_id_, msg.id_,'😍| كفوو عليك الف مبروك لقد فزت وربحت نقطة🥇\n♻| للعب مره اخرى ارسل »{ الاسرع }')
+send(msg.chat_id_, msg.id_,'*😍| كفوو عليك الف مبروك لقد فزت وربحت نقطة🥇\n♻| للعب مره اخرى ارسل »{ الاسرع }*')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:alasra:Bot'..msg.chat_id_,true)
@@ -721,14 +721,14 @@ name = string.gsub(name,'مصر','🇪🇬')
 name = string.gsub(name,'السعودية','🇸🇦')
 name = string.gsub(name,'العراق','🇮🇶')
 name = string.gsub(name,'اليمن','🇾🇪')
-send(msg.chat_id_, msg.id_,'🎗️| أسرع شخص يرسل اسم الدولة » {'..name..'}')
+send(msg.chat_id_, msg.id_,'*🎗️| أسرع شخص يرسل اسم الدولة » {'..name..'}*')
 return false
 end
 end
 ------------------------------------------------------------------------
 if text == ''..(database:get(bot_id..'Klam:Dwl'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Dwl:Tr'..msg.chat_id_) then
 if not database:get(bot_id..'Dwl:Tr'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'😍| كفو وربي الف مبروك لقد فزت وربحت 5 نقاط \n♻¦ للعب مره اخرى ارسل »{ علم , الدول }')
+send(msg.chat_id_, msg.id_,'*😍| كفو وربي الف مبروك لقد فزت وربحت 5 نقاط \n♻¦ للعب مره اخرى ارسل »{ علم , الدول }*')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 5)  
 end
 database:set(bot_id..'Dwl:Tr'..msg.chat_id_,true)
@@ -738,7 +738,7 @@ if database:get(bot_id..'Lock:Games'..msg.chat_id_)  then
 database:del(bot_id..'Lock:Games'..msg.chat_id_) 
 Text = '\n🎗️| تم تعطيل الالعاب' 
 else
-Text = '\n⚠️| بالتاكيد تم تعطيل الالعاب'
+Text = '\n*⚠️| بالتاكيد تم تعطيل الالعاب*'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
@@ -747,7 +747,7 @@ if not database:get(bot_id..'Lock:Games'..msg.chat_id_)  then
 database:set(bot_id..'Lock:Games'..msg.chat_id_,true) 
 Text = '\n🎗️| تم تفعيل الالعاب' 
 else
-Text = '\n💠| بالتاكيد تم تفعيل الالعاب'
+Text = '\n*💠| بالتاكيد تم تفعيل الالعاب*'
 end
 send(msg.chat_id_, msg.id_,Text) 
 end
