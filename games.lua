@@ -125,7 +125,7 @@ name = string.gsub(name,'حاسوب','س ا ح و ب')
 name = string.gsub(name,'انترنيت','ا ت ن ر ن ي ت')
 name = string.gsub(name,'ساحه','ح ا ه س')
 name = string.gsub(name,'جسر','ر ج س')
-send(msg.chat_id_, msg.id_,'*🎗️| اسرع واحد يرتبها* » {'..name..'}*')
+send(msg.chat_id_, msg.id_,'🎗️| اسرع واحد يرتبها* » {'..name..'}*')
 return false
 end
 end
@@ -291,7 +291,7 @@ name = string.gsub(name,'موعطشان','عطشان')
 name = string.gsub(name,'خوش ولد','موخوش ولد')
 name = string.gsub(name,'حمار','مطي')
 name = string.gsub(name,'هادئ','عصبي')
-send(msg.chat_id_, msg.id_,'*🎗️| اسرع واحد يدز العكس » {'..name..'}*')
+send(msg.chat_id_, msg.id_,'🎗️| اسرع واحد يدز العكس* » {'..name..'}*')
 return false
 end
 end
@@ -433,7 +433,7 @@ name = string.gsub(name,'🕒','🕒🕒🕒🕒🕒🕒🕓🕒🕒🕒')
 name = string.gsub(name,'🕤','🕥🕥🕥🕥🕥🕤🕥🕥🕥')
 name = string.gsub(name,'⌛️','⏳⏳⏳⏳⏳⏳⌛️⏳⏳')
 name = string.gsub(name,'📅','📆📆📆📆📆📆📅📆📆')
-send(msg.chat_id_, msg.id_,'*🎗️| اسرع واحد يدز الاختلاف » {'..name..'}*')
+send(msg.chat_id_, msg.id_,'🎗️| اسرع واحد يدز الاختلاف *» {'..name..'}*')
 return false
 end
 end
@@ -475,7 +475,7 @@ name = string.gsub(name,'15','25-10=')
 name = string.gsub(name,'39','44-5=')
 name = string.gsub(name,'5','12+1-8=')
 name = string.gsub(name,'16','16+16-16=')
-send(msg.chat_id_, msg.id_,'*كم ناتج العمليه الحسابيه التاليه » {'..name..'}*')
+send(msg.chat_id_, msg.id_,'كم ناتج العمليه الحسابيه التاليه* » {'..name..'}*')
 return false
 end
 end
@@ -516,7 +516,7 @@ name = string.gsub(name,'اعلم','I know')
 name = string.gsub(name,'تمساح','crocodile')
 name = string.gsub(name,'مختلف','Different')
 name = string.gsub(name,'ذكي','Intelligent')
-send(msg.chat_id_, msg.id_,'*ماذا تعني هذه الكلمة ~ { '..name..' }*')
+send(msg.chat_id_, msg.id_,'ماذا تعني هذه الكلمة *~ { '..name..' }*')
 return false
 end
 end
@@ -565,7 +565,7 @@ name = string.gsub(name,'يعرفك','اللي ما.......... ما يثمنك')
 name = string.gsub(name,'زيد','كأنك يا بو ..........ما غزيت')
 name = string.gsub(name,'اقرد','أرضي بقردك لا يجيك ......... منه')
 name = string.gsub(name,'اليد','العين بصيره و.......... قصيره.')
-send(msg.chat_id_, msg.id_,'*🎗️| اسرع واحد يكمل المثل » {'..name..'}*')
+send(msg.chat_id_, msg.id_,'🎗️| اسرع واحد يكمل المثل* » {'..name..'}*')
 return false
 end
 end
@@ -611,7 +611,7 @@ name = string.gsub(name,'الفهد','ما هو أسرع حيوان بري في 
 name = string.gsub(name,'النمر','ما هو أكبر أنواع القطط في العالم؟')
 name = string.gsub(name,'باسكال','من هو مخترع الآلة الحاسبة؟')
 name = string.gsub(name,'1939','متى وقعت الحرب العالمية الثانية?')
-send(msg.chat_id_, msg.id_,'*🎗️| اسرع واحد يحل اللغز » {'..name..'}*')
+send(msg.chat_id_, msg.id_,'🎗️| اسرع واحد يحل اللغز* » {'..name..'}*')
 return false
 end
 end
@@ -669,7 +669,7 @@ name = string.gsub(name,'زرافه','زرافه')
 name = string.gsub(name,'قنفذ','قنفذ')
 name = string.gsub(name,'سورس','سورس')
 name = string.gsub(name,'باذنجان','باذنجان')
-send(msg.chat_id_, msg.id_,'*🎗️| اسرع واحد يرسل الكلمة » {'..name..'}*')
+send(msg.chat_id_, msg.id_,'🎗️| اسرع واحد يرسل الكلمة* » {'..name..'}*')
 return false
 end
 end
@@ -721,7 +721,7 @@ name = string.gsub(name,'مصر','🇪🇬')
 name = string.gsub(name,'السعودية','🇸🇦')
 name = string.gsub(name,'العراق','🇮🇶')
 name = string.gsub(name,'اليمن','🇾🇪')
-send(msg.chat_id_, msg.id_,'*🎗️| أسرع شخص يرسل اسم الدولة » {'..name..'}*')
+send(msg.chat_id_, msg.id_,'🎗️| أسرع شخص يرسل اسم الدولة* » {'..name..'}*')
 return false
 end
 end
