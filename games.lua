@@ -125,7 +125,7 @@ name = string.gsub(name,'حاسوب','س ا ح و ب')
 name = string.gsub(name,'انترنيت','ا ت ن ر ن ي ت')
 name = string.gsub(name,'ساحه','ح ا ه س')
 name = string.gsub(name,'جسر','ر ج س')
-send(msg.chat_id_, msg.id_,'*🎗️| اسرع واحد يرتبها » {'..name..'}*')
+send(msg.chat_id_, msg.id_,'*🎗️| اسرع واحد يرتبها* » {'..name..'}')
 return false
 end
 end
