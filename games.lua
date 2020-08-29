@@ -239,7 +239,7 @@ name = string.gsub(name,'زرافه','🦒')
 name = string.gsub(name,'قنفذ','🦔')
 name = string.gsub(name,'تفاحه','🍎')
 name = string.gsub(name,'باذنجان','🍆')
-send(msg.chat_id_, msg.id_,'🎗️| اسرع واحد يدز معنى السمايل * » {'..name..'}*')
+send(msg.chat_id_, msg.id_,'*🎗️| اسرع واحد يدز معنى السمايل  » {'..name..'}*')
 return false
 end
 end
@@ -433,7 +433,7 @@ name = string.gsub(name,'🕒','🕒🕒🕒🕒🕒🕒🕓🕒🕒🕒')
 name = string.gsub(name,'🕤','🕥🕥🕥🕥🕥🕤🕥🕥🕥')
 name = string.gsub(name,'⌛️','⏳⏳⏳⏳⏳⏳⌛️⏳⏳')
 name = string.gsub(name,'📅','📆📆📆📆📆📆📅📆📆')
-send(msg.chat_id_, msg.id_,'🎗️| اسرع واحد يدز الاختلاف *» {'..name..'}*')
+send(msg.chat_id_, msg.id_,'*🎗️| اسرع واحد يدز الاختلاف » {'..name..'}*')
 return false
 end
 end
