@@ -59,7 +59,7 @@ end
 end
 if text == ''..(database:get(bot_id..'Random:Sm'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Set:Sma'..msg.chat_id_) then
 if not database:get(bot_id..'Set:Sma'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'*🎁  اموت على الذكاء كفو اجابتك صحيحه👌🏼🥇 *\n♻¦ للعب مره اخرى ارسل »{ سمايل , سمايلات }')
+send(msg.chat_id_, msg.id_,'*🎁  اموت على الذكاء كفو اجابتك صحيحه👌🏼🥇\n♻¦ للعب مره اخرى ارسل »{ سمايل , سمايلات }*')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:Sma'..msg.chat_id_,true)
@@ -132,7 +132,7 @@ end
 ------------------------------------------------------------------------
 if text == ''..(database:get(bot_id..'Klam:Speed'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Speed:Tr'..msg.chat_id_) then
 if not database:get(bot_id..'Speed:Tr'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'*😍| اموت على الذكاء كفو اجابتك صحيحه*👌🏼🥇 \n♻¦ للعب مره اخرى ارسل »{ الترتيب , ترتيب }')
+send(msg.chat_id_, msg.id_,'*😍| اموت على الذكاء كفو اجابتك صحيحه👌🏼🥇 \n♻¦ للعب مره اخرى ارسل »{ الترتيب , ترتيب }*')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Speed:Tr'..msg.chat_id_,true)
@@ -298,7 +298,7 @@ end
 ------------------------------------------------------------------------
 if text == ''..(database:get(bot_id..'Set:Aks:Game'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Set:Aks'..msg.chat_id_) then
 if not database:get(bot_id..'Set:Aks'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'*😍| اموت على الذكاء كفو اجابتك صحيحه*🥇\n♻¦ للعب مره اخرى ارسل »{ العكس , عكس }')
+send(msg.chat_id_, msg.id_,'*😍| اموت على الذكاء كفو اجابتك صحيحه🥇\n♻¦ للعب مره اخرى ارسل »{ العكس , عكس }*')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:Aks'..msg.chat_id_,true)
@@ -441,7 +441,7 @@ end
 if text == ''..(database:get(bot_id..':Set:Moktlf'..msg.chat_id_) or '')..'' then 
 if not database:get(bot_id..'Set:Moktlf:Bot'..msg.chat_id_) then 
 database:del(bot_id..':Set:Moktlf'..msg.chat_id_)
-send(msg.chat_id_, msg.id_,'*😍|  كفوو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻¦ للعب مره اخرى ارسل »{ المختلف , مختلف }*')
+send(msg.chat_id_, msg.id_,'*😍| اموت على الذكاء كفو اجابتك صحيحه لقد فزت وربحت نقطة🥇\n♻¦ للعب مره اخرى ارسل »{ المختلف , مختلف }*')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:Moktlf:Bot'..msg.chat_id_,true)
@@ -525,7 +525,7 @@ end
 if text == ''..(database:get(bot_id..':Set:English'..msg.chat_id_) or '')..'' then 
 if not database:get(bot_id..'Set:English:Bot'..msg.chat_id_) then 
 database:del(bot_id..':Set:English'..msg.chat_id_)
-send(msg.chat_id_, msg.id_,'*😍| كفوو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻| للعب مره اخرى ارسل »{ `انجليزي , الانجليزي` }*')
+send(msg.chat_id_, msg.id_,'*😍| اموت على الذكاء كفو اجابتك صحيحه لقد فزت وربحت نقطة🥇\n♻| للعب مره اخرى ارسل »{ `انجليزي , الانجليزي` }*')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:English:Bot'..msg.chat_id_,true)
@@ -618,7 +618,7 @@ end
 ------------------------------------------------------------------------
 if text == ''..(database:get(bot_id..'Klam:Bos'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Bos:Tr'..msg.chat_id_) then
 if not database:get(bot_id..'Bos:Tr'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'*😍| كفو وربي الف مبروك لقد فزت وربحت نقطة🥇 \n♻¦ للعب مره اخرى ارسل »{ الاسئله , اسئله }*')
+send(msg.chat_id_, msg.id_,'*😍| اموت على الذكاء كفو اجابتك صحيحه لقد فزت وربحت نقطة🥇 \n♻¦ للعب مره اخرى ارسل »{ الاسئله , اسئله }*')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Bos:Tr'..msg.chat_id_,true)
