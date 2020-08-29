@@ -132,7 +132,7 @@ end
 ------------------------------------------------------------------------
 if text == ''..(database:get(bot_id..'Klam:Speed'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Speed:Tr'..msg.chat_id_) then
 if not database:get(bot_id..'Speed:Tr'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'*😍| اموت على الذكاء كفو اجابتك صحيحه👌🏼🥇* \n♻¦ للعب مره اخرى ارسل »{ الترتيب , ترتيب }')
+send(msg.chat_id_, msg.id_,'*😍| اموت على الذكاء كفو اجابتك صحيحه*👌🏼🥇 \n♻¦ للعب مره اخرى ارسل »{ الترتيب , ترتيب }')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Speed:Tr'..msg.chat_id_,true)
@@ -193,7 +193,7 @@ end
 ------------------------------------------------------------------------
 if text == ''..(database:get(bot_id..'Klam:Hzor'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Set:Hzora'..msg.chat_id_) then
 if not database:get(bot_id..'Set:Hzora'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'*😍| كفوو وربي الف مبروك لقد فزت وربحة نقطة🥇 \n♻¦ للعب مره اخرى ارسل »{ حزوره , الحزوره }*')
+send(msg.chat_id_, msg.id_,'*😍| اموت على الذكاء كفو اجابتك صحيحه🥇 \n♻¦ للعب مره اخرى ارسل »{ حزوره , الحزوره }*')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:Hzora'..msg.chat_id_,true)
@@ -298,7 +298,7 @@ end
 ------------------------------------------------------------------------
 if text == ''..(database:get(bot_id..'Set:Aks:Game'..msg.chat_id_) or '')..'' and not database:get(bot_id..'Set:Aks'..msg.chat_id_) then
 if not database:get(bot_id..'Set:Aks'..msg.chat_id_) then 
-send(msg.chat_id_, msg.id_,'*😍|كفو وربي الف مبروك لقد فزت وربحت نقطة🥇\n♻¦ للعب مره اخرى ارسل »{ العكس , عكس }*')
+send(msg.chat_id_, msg.id_,'*😍| اموت على الذكاء كفو اجابتك صحيحه*🥇\n♻¦ للعب مره اخرى ارسل »{ العكس , عكس }')
 database:incrby(bot_id..'NUM:GAMES'..msg.chat_id_..msg.sender_user_id_, 1)  
 end
 database:set(bot_id..'Set:Aks'..msg.chat_id_,true)
