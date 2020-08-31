@@ -721,7 +721,7 @@ name = string.gsub(name,'مصر','🇪🇬')
 name = string.gsub(name,'السعودية','🇸🇦')
 name = string.gsub(name,'العراق','🇮🇶')
 name = string.gsub(name,'اليمن','🇾🇪')
-send(msg.chat_id_, msg.id_,'🎗️| أسرع شخص يرسل اسم الدولة* » {'..name..'}*')
+send(msg.chat_id_, msg.id_,'*🎗️| أسرع شخص يرسل اسم الدولة » {'..name..'}*')
 return false
 end
 end
