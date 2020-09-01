@@ -212,7 +212,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'احبج' then
-TextReply = '•جًِّـﮧذَْاَٰبٌِٰ يَٰـرِٰيَٰدِٰ يَٰطَُِـہكٍٰجًِّ😹🌞⚡️ֆ'
+TextReply = 'حبـك برص 😒'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
