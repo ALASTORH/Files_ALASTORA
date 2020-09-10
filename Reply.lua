@@ -307,7 +307,7 @@ send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
 if text == 'ايفون' then
-TextReply = 'اوسخ جهاز غير اندرويد😉'
+TextReply = 'احلئ جهاز♥'
 send(msg.chat_id_, msg.id_,'['..TextReply..']')
 return false
 end
